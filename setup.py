@@ -12,7 +12,6 @@ def main():
 
     for file in os.listdir("source"):
         path = os.path.join("source", file)
-        print(f"Compiling '{path}'")
         PyInstaller.__main__.run([
             path,
             "--onefile",
