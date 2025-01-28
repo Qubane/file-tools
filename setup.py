@@ -17,7 +17,8 @@ def main():
             path,
             "--onefile",
             "--noconsole",
-            f"--name {os.path.join(COMPILE_DIR, os.path.splitext(file)[0])}"
+            "--distpath",
+            COMPILE_DIR
         ])
 
 
