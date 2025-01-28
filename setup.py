@@ -15,7 +15,8 @@ def main():
         PyInstaller.__main__.run([
             path,
             "--onefile",
-            "--noconsole",
+            "--optimize",
+            "2",
             "--distpath",
             COMPILE_DIR
         ])
