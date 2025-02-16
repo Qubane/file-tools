@@ -28,7 +28,7 @@ def make_name(filepath: str, args: Namespace) -> str:
     # regex
     if args.regex:
         for match in re.finditer(args.regex, path):
-            path = path.replace(match[0], args.dst)
+            path = path.replace(match[0], args.dest)
 
     return path
 
